@@ -18,9 +18,7 @@ public class Main {
             while ((token = lexer.nextToken()).getType() != Token.EOF) {
                 String tokenType = lexer.getVocabulary().getSymbolicName(token.getType());
 
-                if (tokenType.equals("EOF")) {
-                    break;
-                } else if (tokenType == null || tokenType.isEmpty()) {
+                if (tokenType == null || tokenType.isEmpty()) {
                     System.err.println("Erro: Token inválido na linha " + token.getLine() + " com lexema: \"" + token.getText() + "\"");
                 } else {
                     System.out.println("Token: <Classe: " + tokenType + " ,Lexema: " + token.getText() + ">");
