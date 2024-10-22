@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) {
-        String filename = "C:\\Users\\Pichau\\Downloads\\Analisador-Lexico-main\\Analisador-Lexico-main\\codigos\\Fatorial (Com erros).txt"; 
+        String filename = "C:\\Users\\codigos\\Fatorial (Com erros).txt"; 
 
         try {
             CharStream input = CharStreams.fromFileName(filename);
