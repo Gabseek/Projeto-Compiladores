@@ -1,0 +1,21 @@
+func fibonacci(n){
+	se (n <= 0) entao {
+    	   ret 0;
+	}
+	se (n == 1) entao {
+    	   ret 1;
+	}
+	senao {
+    	  ret fibonacci(n - 1) + fibonacci(n - 2);
+	}
+}
+
+func somaFibonacci(n) {
+int soma = 0;
+	int i = 0;
+	enquanto (i < n) {
+    		soma = soma + fibonacci(i);
+		i++;
+	}
+	ret soma;
+}

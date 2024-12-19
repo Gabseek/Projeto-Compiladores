@@ -1,0 +1,13 @@
+func mdc(a, b) {
+    enquanto (b != 0) {
+        int resto = a % b;
+        a = b;
+        b = resto;
+    }
+    ret a;
+}
+
+func testeMdc() {
+    int resultado = mdc(48, 18);
+    esc "O MDC de 48 e 18 é:" resultado;
+}
