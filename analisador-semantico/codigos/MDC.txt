@@ -1,0 +1,11 @@
+int a = 2;
+int b = 5;
+
+func mdc(a, b) {
+    enquanto (b != 0) {
+        int resto = a % b;
+        a = b;
+        b = resto;
+    }
+    ret a;
+}
