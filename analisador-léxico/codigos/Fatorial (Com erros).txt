@@ -1,0 +1,8 @@
+func fatorial(n){
+	se (n == 0) entao {
+		ret 1;
+	}
+	senao { 
+		ret n * fatorial(n - 1);
+	}
+}¨¨
